@@ -179,6 +179,16 @@ small {
 	font-size: 1.2rem;
 	line-height: inherit;
 }
+.pad-10{
+	padding: 10px;
+}
+.pad-10 a{
+	color: darkslategrey !important;
+}
+small{
+	color: indianred;
+	font-weight: bold
+}
 blockquote {
 	margin: 3rem 0;
 	padding-left: 4rem;
