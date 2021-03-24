@@ -929,6 +929,11 @@ header .logo a {
 @media only screen and (max-width: 600px) {
   #intro {
     min-height: 600px;
+    background: #e6e6e6 url("../images/intro_bg_mob.jpg") no-repeat center
+      bottom;
+  }
+  #intro .intro-overlay {
+    opacity: 0.75;
   }
   .intro-content h1 {
     font-size: 4.6rem;
