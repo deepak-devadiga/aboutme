@@ -720,6 +720,14 @@ Made rich design with lots of plugins.!!!
 
     <script src="js/main.js"></script>
 
+    <script>
+        jQuery.event.special.touchstart = {
+            setup: function (_, ns, handle) {
+                this.addEventListener("touchstart", handle, { passive: true });
+            }
+        };
+    </script>
+
 </body>
 
 </html>
