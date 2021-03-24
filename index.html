@@ -734,17 +734,11 @@ Made rich design with lots of plugins.!!!
         };
 
         window.onscroll = function () { myFunction() };
-
         function myFunction() {
-
             var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
             var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
             var scrolled = (winScroll / height) * 100;
             document.getElementById("myBar").style.width = scrolled + "%";
-            if (scrolled == 0)
-                document.getElementById("myBar").parentElement.style.display = "none";
-            else
-                document.getElementById("myBar").parentElement.style.display = "block";
         }
     </script>
 
