@@ -1955,8 +1955,9 @@ footer .copyright span:last-child::after {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  height: auto;
-  width: 90%;
+  /* height: auto; */
+  max-width: 90%;
+  max-height: 90%;
   animation-name: zoom;
   animation-delay: 1s;
 }
