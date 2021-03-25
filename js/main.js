@@ -59,4 +59,13 @@
 		});
 
 	});
+	$('#image-modal').hide();
+	$('.image-grid img').on('click', e => {
+		console.log('image ', e);
+		$('#image-modal').show();
+		$('#image-section').attr('src', e.target.currentSrc)
+	});
+	$('#close-modal').on('click', () => {
+		$('#image-modal').hide();
+	})
 })(jQuery);
