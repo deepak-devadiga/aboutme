@@ -60,16 +60,15 @@
 
 	});
 	$('#image-modal').hide();
-	$('#image-section').remove();
+	// $('#image-section').remove();
 	$('.image-grid img').on('click', e => {
-		$('#image-section').remove();
-		console.log('image ', e);
+		// $('#image-section').remove();
 		$('#image-modal').show();
 		$('.image-container').append(`<img id="image-section" src="${e.target.currentSrc}" alt="modal image" />`)
 		// $('#image-section').attr('src', e.target.currentSrc)
 	});
 	$('#close-modal').on('click', () => {
-		$('#image-section').remove();
+		// $('#image-section').remove();
 		$('#image-modal').hide();
 	})
 })(jQuery);
