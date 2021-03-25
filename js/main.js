@@ -11,34 +11,36 @@
 			// will fade out the whole DIV that covers the website.
 			$("#preloader").delay(300).fadeOut("slow");
 		});
-	})
-	/*---------------------------------------------------- */
-	/* Owl Carousel
-	------------------------------------------------------ */
-	$("#owl-slider").owlCarousel({
-		navigation: false,
-		pagination: true,
-		itemsCustom: [
-			[0, 1],
-			[700, 2],
-			[960, 3]
-		],
-		navigationText: false
-	});
 
-	$("#owl-slider1").owlCarousel({
-		navigation: true,
-		pagination: true,
-		itemsCustom: [
-			[0, 1],
-			[500, 2],
-			[700, 3]
-		],
-		navigationText: false,
-		autoPlay: true,
-		slideSpeed: 100,
-		paginationSpeed: 500
-	});
+		/*---------------------------------------------------- */
+		/* Owl Carousel
+		------------------------------------------------------ */
+		$("#owl-slider").owlCarousel({
+			navigation: false,
+			pagination: true,
+			itemsCustom: [
+				[0, 1],
+				[700, 2],
+				[960, 3]
+			],
+			navigationText: false
+		});
+
+		$("#owl-slider1").owlCarousel({
+			navigation: true,
+			pagination: true,
+			itemsCustom: [
+				[0, 1],
+				[500, 2],
+				[700, 3]
+			],
+			navigationText: false,
+			autoPlay: true,
+			slideSpeed: 100,
+			paginationSpeed: 500
+		});
+	})
+
 
 
 
