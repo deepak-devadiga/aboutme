@@ -120,7 +120,7 @@ h5,
 .h05,
 h6,
 .h06 {
-  font-family: "Poppins";
+  font-family: "Poppins", sans-serif;
   margin-bottom: 1.2rem;
   font-weight: 700;
 }
