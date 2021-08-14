@@ -2158,3 +2158,7 @@ footer .copyright span:last-child::after {
 .btn i {
   vertical-align: middle;
 }
+
+.pointer-link {
+  cursor: pointer;
+}
