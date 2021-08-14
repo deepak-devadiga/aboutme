@@ -40,6 +40,20 @@
 			paginationSpeed: 500
 		});
 
+		$("#owl-slider2").owlCarousel({
+			navigation: true,
+			pagination: true,
+			itemsCustom: [
+				[0, 1],
+				[500, 2],
+				[700, 3]
+			],
+			navigationText: false,
+			autoPlay: true,
+			slideSpeed: 100,
+			paginationSpeed: 500
+		});
+
 
 		$('#ctracker-app-info').on('click', () => {
 			console.log('clicked');
