@@ -39,6 +39,17 @@
 			slideSpeed: 100,
 			paginationSpeed: 500
 		});
+
+
+		$('#ctracker-app-info').on('click', () => {
+			console.log('clicked');
+			showInfoModal(`This app tracks live covid cases and provides info on nearby vaccination center and news about safety precautions for COVID-19.`, 'images/ctracker.png', 'https://drive.google.com/file/d/1y2dMgswcST_L7b_Mm4TrJodZ_bMpL955/view?usp=sharing');
+		})
+
+		$('#recipez-app-info').on('click', () => {
+			console.log('clicked');
+			showInfoModal(`This app can be used to save and view recipes added by various users.`, 'images/recipez.png', 'https://drive.google.com/file/d/1mvi-YMBPF9flHI9YzE2Vn8XuYVZmmUen/view?usp=sharing');
+		})
 	})
 
 
@@ -62,6 +73,7 @@
 
 	});
 	$('#image-modal').hide();
+	$('#info-modal').hide();
 	// $('#image-section').remove();
 	$('.image-grid img').on('click', e => {
 		// $('#image-section').remove();
@@ -73,4 +85,17 @@
 		// $('#image-section').remove();
 		$('#image-modal').hide();
 	})
+	$('#close-info-modal').on('click', () => {
+		// $('#image-section').remove();
+		$('#info-modal').hide();
+	});
+
+	function showInfoModal(content, imgUrl, link) {
+		console.log('calling')
+		$('#info-modal').show();
+		document.getElementById('info-text').innerText = content;
+		$('#info-image-section').attr('src', imgUrl);
+		$('#info-download').attr('href', link);
+	}
+
 })(jQuery);
